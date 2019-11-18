@@ -4,7 +4,7 @@ body {
   max-width: 1080px;
   margin: auto;
   width: 90%;
-  background: no-repeat url("mortal_kombat_PNG23.png"),
+  background: no-repeat url("images/mortal_kombat_PNG23.png"),
     radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(255, 0, 0, 1) 65%);
   background-size: 50% auto;
   background-position: top;
