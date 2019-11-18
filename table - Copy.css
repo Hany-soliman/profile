@@ -1,0 +1,192 @@
+body {
+  font-family: "Yeon Sung", cursive;
+  color: white;
+  max-width: 1080px;
+  margin: auto;
+  width: 90%;
+  background: no-repeat url("mortal_kombat_PNG23.png"),
+    radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(255, 0, 0, 1) 65%);
+  background-size: 50% auto;
+  background-position: top;
+}
+header {
+  background-color: black;
+  padding: 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+container.columns {
+  column-count: 2;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-flow: row wrap;
+}
+article {
+  flex: 1 400px;
+}
+article:nth-last-of-type(2) {
+  flex: 1 100px;
+}
+
+nav {
+  text-align: center;
+  background-color: rgb(2,0,36);
+  width: 100%;
+  border-radius: 20px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  width: 150px;
+
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+nav a:hover {
+  background: #0700da;
+  color: yellow;
+}
+section p:hover {
+  background-color: gray;
+}
+p::selection {
+  background-color: black;
+  color: white;
+}
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+  padding: 15px;
+}
+
+.cards {
+  padding: 4em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+divy {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px 0px hsl(212, 40%, 90%);
+  padding: 1.5em 2em;
+  margin-bottom: 2em;
+}
+divy.cyan-card {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  position: relative;
+  top: 124px;
+}
+divy.red-card {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+divy.blue-card {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  position: relative;
+  top: 124px;
+}
+divy.orange-card {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+divy.card h2,
+divy.card p {
+  margin: 0;
+}
+
+divy.card h2 {
+  font-size: 21px;
+  color: hsl(234, 12%, 34%);
+}
+
+divy.card p {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 26px;
+  color: hsl(229, 6%, 66%);
+}
+
+img.card-icon {
+  display: block;
+  width: 55px;
+  margin: 2.5em 0 0 auto;
+}
+.view_port {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 25%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.9) 75%
+  );
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+  animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+.elementToFadeInAndOut {
+  width: 200px;
+  height: 200px;
+
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+  opacity: 0;
+  animation-iteration-count: infinite;
+  margin-left: auto;
+}
+
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
+}
