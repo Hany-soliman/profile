@@ -6,8 +6,7 @@ body {
   width: 90%;
   background: no-repeat url("images/mortal_kombat_PNG23.png"),
     radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(255, 0, 0, 1) 65%);
-  background-size: 50% auto;
-  background-position: top;
+  background-position: center;
 }
 header {
   background-color: black;
@@ -89,14 +88,17 @@ divy.cyan-card {
   border-top: 4px solid hsl(180, 62%, 55%);
   position: relative;
   top: 124px;
+  background-color: white;
 }
 divy.red-card {
   border-top: 4px solid hsl(0, 78%, 62%);
+  background-color: white;
 }
 divy.blue-card {
   border-top: 4px solid hsl(212, 86%, 64%);
   position: relative;
   top: 124px;
+  background-color: white;
 }
 divy.orange-card {
   border-top: 4px solid hsl(34, 97%, 64%);
@@ -104,6 +106,7 @@ divy.orange-card {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+  background-color: white;
 }
 divy.card h2,
 divy.card p {
